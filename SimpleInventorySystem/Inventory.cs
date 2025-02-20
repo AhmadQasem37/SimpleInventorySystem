@@ -9,6 +9,12 @@ namespace SimpleInventorySystem
             products.Add(product);
         }
 
-        
+        public void ViewAllProducts()
+        {
+            foreach (Product product in products)
+            {
+                Console.WriteLine(product);
+            }
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace SimpleInventorySystem
                         inventory.AddProduct(product);
                         break;
                     case "2":
-
+                        inventory.ViewAllProducts();
                         break;
                     case "3":
 
