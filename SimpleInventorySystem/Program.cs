@@ -9,6 +9,8 @@ namespace SimpleInventorySystem
             Inventory inventory = new Inventory();
             string choice;
 
+            Console.WriteLine("\t\t\t\tSimple Inventory Management System");
+
             do
             {
                 Menu();
@@ -52,16 +54,19 @@ namespace SimpleInventorySystem
                         Console.WriteLine("Invalid choice");
                         break;
                 }
+                Console.WriteLine();
             } while (choice != "6");
         }
         static void Menu()
         {
+            Console.WriteLine("Menu");
             Console.WriteLine("1. Add a Product");
             Console.WriteLine("2. View all Product");
             Console.WriteLine("3. Edit a Product");
             Console.WriteLine("4. Delete a Product");
             Console.WriteLine("5. Search for a product");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("6. Exit");
+            Console.WriteLine();
         }
     }
 }
