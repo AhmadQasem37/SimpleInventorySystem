@@ -23,7 +23,7 @@ namespace SimpleInventorySystem
                         Console.Write("Enter product quantity: ");
                         int quantity = int.Parse(Console.ReadLine());
                         Console.Write("Enter product price: ");
-                        double price = double.Parse(Console.ReadLine());
+                        decimal price = decimal.Parse(Console.ReadLine());
                         Product product = new Product(name, quantity, price);
                         inventory.AddProduct(product);
                         break;
@@ -31,7 +31,9 @@ namespace SimpleInventorySystem
                         inventory.ViewAllProducts();
                         break;
                     case "3":
-
+                        Console.Write("Enter product name to edit: ");
+                        string newName = Console.ReadLine();
+                        inventory.EditProduct(newName);
                         break;
                     case "4":
                         break;
