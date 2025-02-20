@@ -36,6 +36,9 @@ namespace SimpleInventorySystem
                         inventory.EditProduct(newName);
                         break;
                     case "4":
+                    Console.Write("Enter product name to delete: ");
+                        string name = Console.ReadLine();
+                        inventory.DeleteProduct(name);
                         break;
                     case "5":
                         break;

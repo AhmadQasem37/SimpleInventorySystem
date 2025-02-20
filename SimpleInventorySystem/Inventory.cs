@@ -47,5 +47,19 @@ namespace SimpleInventorySystem
 
             Console.WriteLine("Product updated successfully.");
         }
+
+        public void DeleteProduct( string name)
+        {
+            for (int i = 0; i < _products.Count; i++)
+            {
+                if (_products[i].Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    _products.RemoveAt(i);
+                    Console.WriteLine("Product deleted successfully.");
+                    return;
+                }
+            }
+            Console.WriteLine("Product not found.");
+        }
     }
 }
