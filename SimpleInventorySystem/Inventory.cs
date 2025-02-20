@@ -61,5 +61,18 @@ namespace SimpleInventorySystem
             }
             Console.WriteLine("Product not found.");
         }
+
+        public void SearchProduct(string name)
+        {
+            foreach (var product in _products)
+            {
+                if (product.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine(product);
+                    return;
+                }
+            }
+            Console.WriteLine("Product not found.");
+        }
     }
 }

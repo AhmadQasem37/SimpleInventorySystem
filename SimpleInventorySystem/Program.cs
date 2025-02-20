@@ -36,11 +36,14 @@ namespace SimpleInventorySystem
                         inventory.EditProduct(newName);
                         break;
                     case "4":
-                    Console.Write("Enter product name to delete: ");
-                        string name = Console.ReadLine();
-                        inventory.DeleteProduct(name);
+                        Console.Write("Enter product name to delete: ");
+                        string namee = Console.ReadLine();
+                        inventory.DeleteProduct(namee);
                         break;
                     case "5":
+                        Console.Write("Enter product name to search: ");
+                        string searchName = Console.ReadLine();
+                        inventory.SearchProduct(searchName);
                         break;
                     case "6":
                         Console.WriteLine("Exit");
